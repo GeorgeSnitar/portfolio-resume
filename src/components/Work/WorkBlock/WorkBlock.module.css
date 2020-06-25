@@ -1,0 +1,34 @@
+.block{
+    height: 300px;
+    width: 385px;
+    border: 2px solid #2c98f0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.blockImage{
+    width: 100%;
+    height: 100%;   
+}
+
+@media screen and (min-width:320px) and (max-width:440px){
+    .block{
+        height: 200px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 780px){
+    .block{
+        width: 80%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1350px){
+    .block{
+        width: 70%;
+        height: 300px;
+    }
+}

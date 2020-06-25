@@ -1,0 +1,48 @@
+.appWrapper{
+    display: grid;
+    width: 1170px;
+    height: 1007px;
+    margin: 0 auto;
+
+    grid-template-areas:
+    "h c";
+
+    /* grid-template-columns:300 870px ; */
+}
+
+.appWrapperContent{
+    grid-area: c;
+}
+
+@media screen and (min-width: 320px) and (max-width:440px){
+    .appWrapper{
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        grid-template-areas: 
+        "h"
+        "c";
+
+        grid-template-rows: 50px 1fr;
+        /* grid-template-columns: 320px ; */
+    }
+    
+  
+}
+
+@media screen and (min-width: 440px) and (max-width:1350px){
+    .appWrapper{
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        grid-template-areas: 
+        "h"
+        "c";
+
+        grid-template-rows: 5em 1fr;
+        /* grid-template-columns: 1fr; */
+    }
+  
+}

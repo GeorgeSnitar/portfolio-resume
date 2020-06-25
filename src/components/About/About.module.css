@@ -1,0 +1,53 @@
+.aboutBlock{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+}
+
+
+.aboutSoftware{
+    width: 100%;
+    height: 150px;
+    padding: 23px 0 0 23px;
+    border-bottom: 2px solid #f9bf3f;
+    box-shadow: 0px 0px 35px 2px rgba(0,0,0,.1);
+}
+
+.aboutSoftware img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.aboutSoftware h3{
+    font-family: 'Arial';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.aboutText p{
+    font-size: 15px;
+    font-family: 'Arial';
+    margin-bottom: 22.5px;
+}
+
+    @media screen and (min-width:440px) and (max-width:768px){
+        .aboutText p{
+            font-family: 'Arial';
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .aboutSoftware{
+            width: 100%;
+            height: 200px;
+            padding: 23px 0 0 23px;
+            border-bottom: 2px solid #f9bf3f;
+            box-shadow: 0px 0px 35px 2px rgba(0,0,0,.1);
+        }
+        .aboutSoftware h3{
+            font-family: 'Arial';
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+    }

@@ -1,0 +1,102 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #0013ee, #7100ee, #a200ed, #c900ec, #eb12eb);
+    align-items: center;
+    width: 870px;
+}
+.contactBox{
+    width: 60%;
+    margin-top: 7em; 
+    background-color: #fff;
+    animation: show 1s ease-in-out;
+    border: 5px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.contactBlock{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+@keyframes show {
+    from{
+        margin-top: -100em;
+    }
+    to{
+        margin-top: 7em;
+    }
+}
+.contactBlock p{
+    font-family: 'Arial';
+    margin: 0 ;
+    color: black;
+    font-style: oblique;
+}
+.contactBlock img{
+    width: 70px;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width:320px) and (max-width: 440px){
+    .contact{
+        width: 100vw;
+    }
+    .contactBox{
+        width: 90%;
+        border: 3px solid rgba(0, 0, 0, 1);
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    .contactBlock{
+        width: 80%;
+    }
+    .contactBlock img{
+        width: 50px;
+    }
+    .contactBlock p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:440px) and (max-width: 780px){
+    .contact{
+        width: 100vw;
+    }
+    .contactBox{
+        width: 70%;
+        border: 5px solid rgba(0, 0, 0, 1);
+        border-radius: 7px;
+        padding: 5px 10px;
+    }
+    .contactBlock{
+        width: 80%;
+    }
+    .contactBlock img{
+        max-width: 70px;
+    }
+    .contactBlock p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:780px) and (max-width:1350px){
+    .contact{
+        width: 100vw;
+    }
+    .contactBlock{
+        width: 50%;
+    }
+    .contactBlock img{
+        max-width: 70px;
+    }
+    .contactBlock p{
+        font-size: 20px;
+    }
+}
